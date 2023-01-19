@@ -1,0 +1,259 @@
+/*For entire file*/
+:root {
+    --darkgray: #212329;
+    --white: #fff;
+    --lightblue: #79c7d8; 
+    --purple: #6B6BAC; 
+}
+
+* {
+    box-sizing: border-box; 
+    padding: 0; 
+    margin: 0; 
+    font-family: 'Nunito', sans-serif;
+}
+
+/*Navigation*/
+.nav-container {
+    width: 100%; 
+    background-color: var(--darkgray); 
+}
+
+.navbar {
+    display: grid; 
+    grid-template-columns: 0.3fr auto;
+    align-items: center;
+    height: 80px; 
+    width: 90%; 
+    max-width: 1720px; /* prevent very large screens from padding extra*/
+    margin: 0 auto;  /*top and bottom is 0, left and right is auto*/ 
+    
+    
+
+}
+/*Navigation - content*/
+#navbar-logo {
+    color: var(--white); 
+    margin-left: 20px ;
+
+}
+
+#navbar-logo {
+    cursor: pointer; 
+    
+}
+
+.nav-menu {
+    display: grid; 
+    grid-template-columns: repeat(5, auto);
+    list-style: none; 
+    text-align: center; 
+    width: 70%; 
+    justify-self: end;
+}
+
+.nav-links {
+    color: white;
+    text-decoration: none; 
+}
+/*Navigation - after effects*/
+.nav-links:hover {
+    color: var(--purple);
+    transition: all 0.2s ease-out; 
+}
+
+.nav-links-btn {
+    background-color: var(--lightblue);
+    padding: 6px 16px; 
+}
+
+.nav-links-btn:hover {
+    background-color: var(--white); 
+    transition: 0.5s ease-in-out; 
+    color: (--darkgray);
+
+}
+
+/*Main section*/
+.main {
+    background-color: var(--white);
+}
+
+.main-container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    align-items: center; 
+    justify-self: center; 
+    width: 85%; 
+    margin: 2rem auto;
+    height: fit-content;
+    background-color: var(--white);
+    margin-bottom: 2rem;
+}
+
+.main-content {
+    width: fit-content; 
+}
+
+.main-content h1{
+    color: var(--darkgray);
+    font-size: 4rem;
+    text-align: center;
+    border-style: solid;
+    border-radius: 5%;
+    width: fit-content;
+    padding: 0 0.5rem;
+    margin: auto;
+    border-color: var(--lightblue);
+    background-image: linear-gradient(to top, var(--purple) 0%, var(--lightblue) 100%);
+}
+
+.main-content h2 {
+    color: var(--lightblue);
+    font-size: 2rem;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.main-content p {
+    text-align: center;
+    padding: 5px 0; 
+    
+}
+
+#main-pic {
+    width: 800px; 
+    margin-left: 9rem;
+    
+}
+
+
+/*Products Section*/
+.products {
+    display: grid; 
+    align-items: center;
+    background-color: var(--darkgray);
+    height: 100vh;
+    
+}
+
+.products-container {
+    display: grid; 
+    justify-content: center; 
+    width: 80%;
+    grid-template-columns: 1fr 1fr;
+    margin: 2rem auto;
+}
+
+.products-image{
+    text-align: center;
+    height: 50vh;
+    background-image: url(phone.jpg);
+    background-size: cover;
+    margin: auto 15px;
+    
+}
+
+.products-image-end {
+    text-align: center;
+    height: 50vh;
+    background-image: url(keyboard.jpg);
+    background-size: cover;
+    margin: auto 15px;
+}
+
+.products h1 {
+    font-size: 2rem;
+    padding: 5px;
+    background-image: linear-gradient(to top, var(--lightblue) 0%, var(--purple) 100%);
+}
+
+.products p {
+    font-size: 1rem; 
+    padding: 5px; 
+}
+
+.products-image-end p{
+    color: var(--white);
+}
+
+.products-container button {
+    text-align: center;
+    margin: 5px; 
+    padding: 5px 1rem;
+    font-size: 1.2rem;
+    background-color: var(--darkgray);
+    color: var(--purple);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.products-container button:hover {
+    transform: scale(1.2);
+    color: var(--darkgray);
+    background-color: var(--purple);
+    transition: ease-in-out 0.3s;
+}
+
+/*Footer section*/ 
+
+.footer {
+    background-color: var(--purple);
+    height: 160px;
+    margin-bottom: 0; 
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+.footer-block {
+    text-align: center;
+    margin: 2rem 1rem; 
+}
+
+.footer-block h1 {
+    color: var(--white);
+    font-size: 1.5rem; 
+    font-weight: 100;
+    
+    text-align: center;
+}
+
+.footer-block hr {
+    margin-bottom: 10px;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: var(--darkgray);
+    margin-top: 5rem;
+}
+
+.footer-block img {
+    width: 5%;
+    margin-left: 3px;
+    margin-bottom: -2px; /*aligns the logo with the heading*/
+}
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
